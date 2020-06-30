@@ -136,6 +136,8 @@ class TestS3FileBuffered:
         s3file.seek(0)
         assert content[:16] == s3file.read(16)
         assert content[16 : 16 + 128] == s3file.read(128)
+        s3file.seek(128)
+        assert content[128 : 16 + 128] == s3file.read(16)
 
         # seek before file
         with pytest.raises(OSError):
