@@ -130,13 +130,9 @@ class S3FileBuffered(io.BufferedIOBase):
             self.buffer
         ):
             jump = self.position - old_position
-            print(f"Trimming buffer by {jump}")
-            print(self.buffer)
-            print(self.buffer[jump:])
             self.buffer = self.buffer[jump:]
         else:
             # too big a change, empty the buffer
-            print("Empting buffer")
             self.buffer = b""
 
         return self.position
