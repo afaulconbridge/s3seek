@@ -23,21 +23,17 @@ class S3File(io.RawIOBase):
     def seek(self, offset, whence=io.SEEK_SET):
         if whence == io.SEEK_SET:
             if offset < 0:
-                raise ValueError("Unable to seek before start")
-            if offset > self.size:
-                raise ValueError("Unable to seek after end")
+                raise OSError("Unable to seek before start")
+            # seeking past the end is permitted
             self.position = offset
         elif whence == io.SEEK_CUR:
             if self.position + offset < 0:
-                raise ValueError("Unable to seek before start")
-            if self.position + offset > self.size:
-                raise ValueError("Unable to seek after end")
+                raise OSError("Unable to seek before start")
+            # seeking past the end is permitted
             self.position += offset
         elif whence == io.SEEK_END:
             if offset < -self.size:
-                raise ValueError("Unable to seek before start")
-            if offset > 0:
-                raise ValueError("Unable to seek after end")
+                raise OSError("Unable to seek before start")
             self.position = self.size + offset
         else:
             raise ValueError(
@@ -54,6 +50,9 @@ class S3File(io.RawIOBase):
         if size == -1 and self.position == 0:
             # special case, skip range header if reading all
             return self.s3_object.get()["Body"].read()
+        elif self.position >= self.size:
+            # reading past the end of the file does little
+            return b""
         elif size == -1:
             # Read to the end of the file
             range_header = f"bytes={self.position}-{self.size}"
@@ -107,21 +106,17 @@ class S3FileBuffered(io.BufferedIOBase):
 
         if whence == io.SEEK_SET:
             if offset < 0:
-                raise ValueError("Unable to seek before start")
-            if offset > self.size:
-                raise ValueError("Unable to seek after end")
+                raise OSError("Unable to seek before start")
+            # seeking past the end is permitted
             self.position = offset
         elif whence == io.SEEK_CUR:
             if self.position + offset < 0:
-                raise ValueError("Unable to seek before start")
-            if self.position + offset > self.size:
-                raise ValueError("Unable to seek after end")
+                raise OSError("Unable to seek before start")
+            # seeking past the end is permitted
             self.position += offset
         elif whence == io.SEEK_END:
             if offset < -self.size:
-                raise ValueError("Unable to seek before start")
-            if offset > 0:
-                raise ValueError("Unable to seek after end")
+                raise OSError("Unable to seek before start")
             self.position = self.size + offset
         else:
             raise ValueError(

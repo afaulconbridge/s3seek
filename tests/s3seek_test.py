@@ -67,19 +67,17 @@ class TestS3File:
         s3file.seek(-16, io.SEEK_END)
         assert content[-16:] == s3file.read(16)
 
-        # seek outside of file
-        with pytest.raises(ValueError):
+        # seek before file
+        with pytest.raises(OSError):
             s3file.seek(-len(content) - 1, io.SEEK_CUR)
-        with pytest.raises(ValueError):
-            s3file.seek(len(content), io.SEEK_CUR)
-        with pytest.raises(ValueError):
+        with pytest.raises(OSError):
             s3file.seek(-1, io.SEEK_SET)
-        with pytest.raises(ValueError):
-            s3file.seek(len(content) + 1, io.SEEK_SET)
-        with pytest.raises(ValueError):
-            s3file.seek(-1)
-        with pytest.raises(ValueError):
-            s3file.seek(len(content) + 1)
+        with pytest.raises(OSError):
+            s3file.seek(-len(content) - 1, io.SEEK_END)
+
+        # seek after file returns b''
+        s3file.seek(16, io.SEEK_END)
+        assert b"" == s3file.read(16)
 
 
 class TestS3FileBuffered:
@@ -139,16 +137,14 @@ class TestS3FileBuffered:
         assert content[:16] == s3file.read(16)
         assert content[16 : 16 + 128] == s3file.read(128)
 
-        # seek outside of file
-        with pytest.raises(ValueError):
+        # seek before file
+        with pytest.raises(OSError):
             s3file.seek(-len(content) - 1, io.SEEK_CUR)
-        with pytest.raises(ValueError):
-            s3file.seek(len(content), io.SEEK_CUR)
-        with pytest.raises(ValueError):
+        with pytest.raises(OSError):
             s3file.seek(-1, io.SEEK_SET)
-        with pytest.raises(ValueError):
-            s3file.seek(len(content) + 1, io.SEEK_SET)
-        with pytest.raises(ValueError):
-            s3file.seek(-1)
-        with pytest.raises(ValueError):
-            s3file.seek(len(content) + 1)
+        with pytest.raises(OSError):
+            s3file.seek(-len(content) - 1, io.SEEK_END)
+
+        # seek after file returns b''
+        s3file.seek(16, io.SEEK_END)
+        assert b"" == s3file.read(16)
