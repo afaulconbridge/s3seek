@@ -49,6 +49,7 @@ class S3File(io.RawIOBase):
     def read(self, size=-1):
         if size == -1 and self.position == 0:
             # special case, skip range header if reading all
+            self.seek(0, whence=io.SEEK_END)
             return self.s3_object.get()["Body"].read()
         elif self.position >= self.size:
             # reading past the end of the file does little
@@ -56,7 +57,9 @@ class S3File(io.RawIOBase):
         elif size == -1:
             # Read to the end of the file
             range_header = f"bytes={self.position}-{self.size}"
-            self.seek(offset=0, whence=io.SEEK_END)
+            value = self.s3_object.get(Range=range_header)["Body"].read()
+            self.seek(len(value), whence=io.SEEK_CUR)
+            return value
         else:
             new_position = self.position + size
 
@@ -66,9 +69,9 @@ class S3File(io.RawIOBase):
                 return self.read()
 
             range_header = f"bytes={self.position}-{new_position - 1}"
-            self.seek(offset=size, whence=io.SEEK_CUR)
-
-        return self.s3_object.get(Range=range_header)["Body"].read()
+            value = self.s3_object.get(Range=range_header)["Body"].read()
+            self.seek(len(value), whence=io.SEEK_CUR)
+            return value
 
     def writable(self):
         return False
@@ -81,12 +84,14 @@ class S3File(io.RawIOBase):
 
 
 class S3FileBuffered(io.BufferedIOBase):
-    def __init__(self, s3_object, buffer_max=1048576):
+    def __init__(self, s3_object, buffer_max=1024 * 1024):
         self.s3_object = s3_object
         self.position = 0
         self.buffer_max = buffer_max  # default 1MB = 1048576 bytes
         self.buffer = b""
         self.raw = S3File(s3_object)
+        self.count_buffer_hits = 0
+        self.count_buffer_misses = 0
 
     def __repr__(self):
         return f"S3FileBuffered({self.s3_object})"
@@ -126,11 +131,10 @@ class S3FileBuffered(io.BufferedIOBase):
 
         # need to update the buffer as we moved
         # if its a small jump forward, jump the buffer
-        if self.position > old_position and self.position < old_position + len(
+        if self.position > old_position and self.position - old_position < len(
             self.buffer
         ):
-            jump = self.position - old_position
-            self.buffer = self.buffer[jump:]
+            self.buffer = self.buffer[self.position - old_position :]
         else:
             # too big a change, empty the buffer
             self.buffer = b""
@@ -150,12 +154,13 @@ class S3FileBuffered(io.BufferedIOBase):
         if size <= len(self.buffer):
             # request fits in current buffer
             # no need to get more data
+            self.count_buffer_hits += 1
             value = self.buffer[:size]
-            self.buffer = self.buffer[size:]
-            self.seek(size, io.SEEK_CUR)
+            self.seek(len(value), io.SEEK_CUR)
             return value
         else:
             # need to grow buffer
+            self.count_buffer_misses += 1
             # calculate how much more we need
             size_to_get = size - len(self.buffer) + self.buffer_max
             # move to the appropriate place in the raw stream
@@ -165,7 +170,7 @@ class S3FileBuffered(io.BufferedIOBase):
             # get the piece to return
             value = self.buffer[:size]
             # move the position and trim the buffer
-            self.seek(size, io.SEEK_CUR)
+            self.seek(len(value), io.SEEK_CUR)
             # return the value we put together earlier
             return value
 
