@@ -10,7 +10,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/afaulconbridge/s3seek",
-    install_requires=["boto3"],
+    install_requires=[],
     extras_require={
         "dev": [
             "pytest-cov",
@@ -20,6 +20,7 @@ setup(
             "pip-tools",
             "pipdeptree",
             "pre-commit",
+            "boto3",
         ],
     },
 )
