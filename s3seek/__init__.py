@@ -5,6 +5,7 @@ class S3File(io.RawIOBase):
     def __init__(self, s3_object):
         self.s3_object = s3_object
         self.position = 0
+        self._size = self.s3_object.content_length
 
     def __repr__(self):
         return f"S3File({self.s3_object})"
@@ -12,7 +13,7 @@ class S3File(io.RawIOBase):
     @property
     def size(self):
         # TODO check if this is cached or always requested
-        return self.s3_object.content_length
+        return self._size
 
     def seekable(self):
         return True
@@ -84,7 +85,7 @@ class S3File(io.RawIOBase):
 
 
 class S3FileBuffered(io.BufferedIOBase):
-    def __init__(self, s3_object, buffer_max=1024 * 1024):
+    def __init__(self, s3_object, buffer_max=1024*1024):
         self.s3_object = s3_object
         self.position = 0
         self.buffer_max = buffer_max  # default 1MB = 1048576 bytes
@@ -131,13 +132,14 @@ class S3FileBuffered(io.BufferedIOBase):
 
         # need to update the buffer as we moved
         # if its a small jump forward, jump the buffer
-        if self.position > old_position and self.position - old_position < len(
+        if self.position >= old_position and self.position - old_position < len(
             self.buffer
         ):
-            self.buffer = self.buffer[self.position - old_position :]
+            self.buffer = self.buffer[self.position - old_position:]
         else:
             # too big a change, empty the buffer
             self.buffer = b""
+
 
         return self.position
 
