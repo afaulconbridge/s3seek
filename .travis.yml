@@ -6,6 +6,6 @@ install:
   - pip install .[dev]
 script:
   - pipdeptree
-  - coverage run --source=s3seek -m pytest
+  - pytest tests/ -s --cov --cov-report xml:test-reports/coverage.xml --junitxml test-reports/pytest/tests.xml
   - coverage report -m
-  #- mypy s3seek
+  - bash <(curl -s https://codecov.io/bash)

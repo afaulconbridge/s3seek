@@ -85,7 +85,7 @@ class S3File(io.RawIOBase):
 
 
 class S3FileBuffered(io.BufferedIOBase):
-    def __init__(self, s3_object, buffer_max=1024*1024):
+    def __init__(self, s3_object, buffer_max=1024 * 1024):
         self.s3_object = s3_object
         self.position = 0
         self.buffer_max = buffer_max  # default 1MB = 1048576 bytes
@@ -135,11 +135,10 @@ class S3FileBuffered(io.BufferedIOBase):
         if self.position >= old_position and self.position - old_position < len(
             self.buffer
         ):
-            self.buffer = self.buffer[self.position - old_position:]
+            self.buffer = self.buffer[self.position - old_position :]
         else:
             # too big a change, empty the buffer
             self.buffer = b""
-
 
         return self.position
 

@@ -1,0 +1,3 @@
+[run]
+source = s3seek
+omit = venv/*, *tests*

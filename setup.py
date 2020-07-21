@@ -6,7 +6,7 @@ setup(
     author="Adam Faulconbridge",
     author_email="afaulconbridge@googlemail.com",
     packages=["s3seek"],
-    description="File-like classes for interacting with AWS S3 buckets.In particular, for seek and partial download when reading.",
+    description="File-like classes for interacting with AWS S3 buckets. In particular, for seek and partial download when reading.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/afaulconbridge/s3seek",
