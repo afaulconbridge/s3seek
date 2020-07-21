@@ -1,8 +1,7 @@
 s3seek
 ======
 
-[![Build Status](https://travis-ci.com/afaulconbridge/s3seek.svg?branch=master)](https://travis-ci.com/afaulconbridge/s3seek)
-[![Build Status](https://circleci.com/gh/afaulconbridge/s3seek.svg?style=svg)](https://app.circleci.com/pipelines/github/afaulconbridge/s3seek)
+[![Build Status](https://circleci.com/gh/sanogenetics/s3seek.svg?style=svg)](https://app.circleci.com/pipelines/github/sanogenetics/s3seek)
 [![PyPI version](https://badge.fury.io/py/s3seek.svg)](https://badge.fury.io/py/s3seek)
 
 File-like classes for interacting with AWS S3 buckets. In particular, for

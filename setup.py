@@ -9,7 +9,7 @@ setup(
     description="File-like classes for interacting with AWS S3 buckets. In particular, for seek and partial download when reading.",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/afaulconbridge/s3seek",
+    url="https://github.com/sanogenetics/s3seek",
     install_requires=[],
     extras_require={
         "dev": [
