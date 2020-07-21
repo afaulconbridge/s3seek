@@ -16,8 +16,6 @@ repos:
   hooks:
   - id: check-added-large-files
   - id: check-ast
-  - id: end-of-file-fixer
-  - id: trailing-whitespace
   - id: mixed-line-ending
   - id: name-tests-test
   - id: flake8

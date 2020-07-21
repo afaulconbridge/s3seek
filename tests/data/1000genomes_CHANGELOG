@@ -9537,7 +9537,7 @@ Modification to reference
 Details can be found in the changelog details files
 
 changelog_details/changelog_details_20101105_new_reference
-changelog_details/changelog_details_20101104_new_internal
+changelog_details/changelog_details_20101104_new_internal 
 
 
 2010-11-03
@@ -9569,7 +9569,7 @@ changelog_details/changelog_details_20101101_replacement_index
 changelog_details/changelog_details_20101101_new_index
 changelog_details/changelog_details_20101101_new_filtered_fastq
 changelog_details/changelog_details_20101031_replacement_internal
-changelog_details/changelog_details_20101031_new_internal
+changelog_details/changelog_details_20101031_new_internal        
 changelog_details/changelog_details_20101031_new_filtered_fastq
 changelog_details/changelog_details_20101101_withdrawn_filtered_fastq
 
@@ -9684,7 +9684,7 @@ Details can be found in the changelog details files
 changelog_details/changelog_details_20101014_withdrawn_pilot_internal
 changelog_details/changelog_details_20101014_new_bams
 changelog_details/changelog_details_20101014_withdrawn_bams
-
+ 
 
 2010-10-13
 
@@ -9769,7 +9769,7 @@ Modification to pilot internal
 Details can be found in changelog details file
 
 changelog_details/changelog_details_20100930_new_pilot_internal
-changelog_details/changelog_details_20100930_replacement_bas
+changelog_details/changelog_details_20100930_replacement_bas   
 
 2010-09-29
 
@@ -9779,7 +9779,7 @@ Details can be found in the changelog details files
 changelog_details/changelog_details_20100929_new_internal
 changelog_details/changelog_details_20100929_new_index
 changelog_details/changelog_details_20100929_new_misc
-changelog_details/changelog_details_20100929_replacement_index
+changelog_details/changelog_details_20100929_replacement_index   
 changelog_details/changelog_details_20100929_new_filtered_fastq
 changelog_details/changelog_details_20100929_new_bas
 
@@ -10043,14 +10043,14 @@ June release of main project BAM/BAI/BAS files is available on the DCC ftp site.
 The files locate at
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data
 
-The alignment index file is
-ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/alignment.index  or
+The alignment index file is 
+ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/alignment.index  or 
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/alignment_indices/20100611.alignment.index
 
-A collective bas file for all BAM files is
+A collective bas file for all BAM files is 
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/alignment_indices/20100611.alignment.index.bas.gz
 
-The Stats file is
+The Stats file is  
 ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/alignment_indices/20100611_20100517.alignment_stats.csv
 
 The newly added 7857 files are listed in
@@ -10243,20 +10243,20 @@ List of newly added 1296 files are:
 changelog_details/changelog_details_20100621_new_bams
 No files to withdraw.
 
-For main project BAM release 20100517:
+For main project BAM release 20100517:  
 The alignment index file is alignment.index or alignment_indices/20100517.alignment.index
 A collective bas file for all BAM files is alignment_indices/20100517.alignment.index.bas.gz
 Stats file is  alignment_indices/20100517_20100311.alignment_stats.csv
 
 2010-06-18
 
-Added BAM/BAI/BAS files Sanger provided for release 20100517
+Added BAM/BAI/BAS files Sanger provided for release 20100517 
 
 List of newly added 15309 files are:
 changelog_details/changelog_details_20100618_new_bams
 List of 5751 withdrawn files are:
 changelog_details/changelog_details_20100618_withdrawn_bams
-List of 29835 replacement bas files for release 20100311 are:
+List of 29835 replacement bas files for release 20100311 are: 
 changelog_details/changelog_details_20100618_replacement_bas
 
 
@@ -10272,7 +10272,7 @@ Modification to bas and pilot internal
 Details can be found in the changelog details files
 
 changelog_details/changelog_details_20100617_replacement_bas
-changelog_details/changelog_details_20100617_new_pilot_internal
+changelog_details/changelog_details_20100617_new_pilot_internal  
 
 2010-06-14
 
@@ -10309,7 +10309,7 @@ changelog_details/changelog_details_20100610_new_filtered_fastq
 
 2010-06-09
 
-TGEN updated 81 BAM/BAI/BAS files for the hight coverage individual NA19240 using the 20100311 sequence index.  The updated files have been placed on the ftp site.  The alignment.index file and the collective bas files have been updated to reflect the change.
+TGEN updated 81 BAM/BAI/BAS files for the hight coverage individual NA19240 using the 20100311 sequence index.  The updated files have been placed on the ftp site.  The alignment.index file and the collective bas files have been updated to reflect the change.   
 
 Details are in
 changelog_details/changelog_details_20100609_withdrawn_bams
@@ -10343,7 +10343,7 @@ changelog_details/changelog_details_20100605_new_filtered_fastq
 Modification to filtered_fastq, withdrawal of runs which failed genotype check
 Details can be found in the changelog details file
 
-changelog_details/changelog_details_20100604_withdrawn_filtered_fastq
+changelog_details/changelog_details_20100604_withdrawn_filtered_fastq 
 
 2010-06-03
 
@@ -10466,7 +10466,7 @@ changelog_details/changelog_details_20100504_new_technical
 
 2010-04-27
 
-Added a combined bas file for all alignment data on the ftp site
+Added a combined bas file for all alignment data on the ftp site 
 Details can be found in the changelog details files
 
 changelog_details/changelog_details_20100427_new_bas
@@ -10491,7 +10491,7 @@ changelog_details/changelog_details_20100427_new_filtered_fastq
 2010-04-26
 
 Modification to bas
-Additional filtered fastq
+Additional filtered fastq 
 Details can be found in the changelog details files
 
 changelog_details/changelog_details_20100426_replacement_bas
@@ -10523,7 +10523,7 @@ changelog_details/changelog_details_20100415_new_bas
 First release of main project BAM files and associated BAI and BAS files from Sanger Institute.
 The BAM files were created based on 20091216.sequence.index
 
-Details can be found in
+Details can be found in 
 changelog_details/changelog_details_20100409_new_bam
 
 2010-03-29
@@ -10622,7 +10622,7 @@ Modification to index and addition of readme
 Details can be found in the changelog details files
 
 changelog_details/changelog_details_20100225_replacement_index
-changelog_details/changelog_details_20100225_new_pilot_internal
+changelog_details/changelog_details_20100225_new_pilot_internal 
 
 2010-02-24
 
@@ -10631,7 +10631,7 @@ Addition of new reference file
 
 Details can be found in
 changelog_details/changelog_details_20100224_moved_readmes
-changelog_details/changelog_details_20100224_new_reference
+changelog_details/changelog_details_20100224_new_reference 
 
 2010-02-23
 
@@ -10750,11 +10750,11 @@ changelog_details/changelog_details_20100202_new_pilot_snp_data
 
 January 25th 2010
 
-Addition of new fastq files and withdrawal of fastq files both as their respective runs have been suppressed in the archive
+Addition of new fastq files and withdrawal of fastq files both as their respective runs have been suppressed in the archive 
 and because of runs failing the genotype check
 
-changelog_details/changelog_details_20100125_new_fastq
-changelog_details/changelog_details_20100125_withdrawn_fastq
+changelog_details/changelog_details_20100125_new_fastq        
+changelog_details/changelog_details_20100125_withdrawn_fastq  
 
 January 12th  2010
 
@@ -10770,7 +10770,7 @@ January 5th 2010
 
 Mosaik pilot3 SLX  bam ( + .bai + .bas )  file  added
 
-changelog_details/changelog_details_20100105_new_pilot3_mosaik_bam
+changelog_details/changelog_details_20100105_new_pilot3_mosaik_bam 
 
 January 4th 2010
 
@@ -10802,7 +10802,7 @@ changelog_details/changelog_details_20091223_new_pilot3_bams
 
 Mosaik pilot3 454 bam ( + .bai )  files
 changelog_details/changelog_details_20091222_new_pilot3_bams
-
+                        
 Mosaik pilot3 454 bas files
 
 changelog_details/changelog_details_20091222_new_pilot3_bas_files
@@ -10820,7 +10820,7 @@ changelog_details/changelog_details_20091220_updated_pilot_readme
 
 Supplementary Data associated with the Illimina 1KGP-12 chip
 
-changelog_details/changelog_details_20091221_moved_illumina_results_files
+changelog_details/changelog_details_20091221_moved_illumina_results_files  
 changelog_details/changelog_details_20091221_new_illumina_chip_annotation
 
 20th December 2009
@@ -10941,7 +10941,7 @@ changelog_details/changelog_details_20091110_new_filtered_fastq_files
 
 changelog_details/changelog_details_20091110_replacement_filtered_fastq_files
 
-Also replaced 159 CHB filtered fastq files in pilot_data/data with new ones.  Details are in
+Also replaced 159 CHB filtered fastq files in pilot_data/data with new ones.  Details are in 
 
 changelog_details/changelog_details_20091110_replacement_CHB_filtered_fastq
 
@@ -10979,7 +10979,7 @@ changelog_details_20091106_new_fastq
 
 November 3, 2009
 
-added 5 replacement pilot 1 .bas files. They were incorrectly labelled
+added 5 replacement pilot 1 .bas files. They were incorrectly labelled 
 
 SRP000032 in column 3.
 
@@ -10989,9 +10989,9 @@ changelog_details_20091104_replacement_bas
 
 added files :
 
-     technical/method_development/determining_CCNC_and_introns/README.CNC_introns_determining_scripts
+     technical/method_development/determining_CCNC_and_introns/README.CNC_introns_determining_scripts	
 
-     technical/method_development/determining_CCNC_and_introns/CNC_introns_determining_scripts.tgz
+     technical/method_development/determining_CCNC_and_introns/CNC_introns_determining_scripts.tgz 
 
 the latter includes scripts and data off of the gencode annotation for determining conserved noncoding regions and introns
 
@@ -11017,7 +11017,7 @@ changelog_details_20091029_replacement_bams
 
 October 27, 2009
 
-Added 18 replacement BAM files and associated bas and bai files for CHB runs done by BGI. The details are in
+Added 18 replacement BAM files and associated bas and bai files for CHB runs done by BGI. The details are in 
 
 changelog_details/changelog_details_20091026_replacement_CHB_bams
 
@@ -11029,7 +11029,7 @@ October 23,2009
 
 Replacement pilot1 bams added
 
-details in
+details in 
 
 changelog_details_20091023_withdrawn_bams
 
@@ -11079,7 +11079,7 @@ New reference genome is added to technical/reference
 
 Old build B36 is moved to technical/retired_reference
 
-Details are in
+Details are in 
 
 changelog_details/changelog_details_20091012_new_reference_genome
 
@@ -11093,11 +11093,11 @@ changelog_details/changelog_details_20091008_new_snp_calls
 
 7th October 2009
 
-1. Added 844 new filtered fastq files to data/  They were obtained by an update retrieval from ERA and associating fastq files were filtered by the DCC QA pipeline. The list contains 159 filtered fastq files that should replace the withdrawn Han Chinese lanes with quality errors (see CHANGELOG of 6th of October, 2009).
+1. Added 844 new filtered fastq files to data/  They were obtained by an update retrieval from ERA and associating fastq files were filtered by the DCC QA pipeline. The list contains 159 filtered fastq files that should replace the withdrawn Han Chinese lanes with quality errors (see CHANGELOG of 6th of October, 2009). 
 
 Details in changelog_details/changelog_details_20091007_new_filtered_fastq_files
 
-2. Copied 159 filtered fastq files from data/ to pilot_data/data/  These are new fastq files for the withdrawn Han Chinese lanes with quality errors (see CHANGELOG of 6th of October, 2009).
+2. Copied 159 filtered fastq files from data/ to pilot_data/data/  These are new fastq files for the withdrawn Han Chinese lanes with quality errors (see CHANGELOG of 6th of October, 2009). 
 
 Details in changelog_details/changelog_details_20091007_new_CHB_filtered_fastq_files
 
@@ -11115,7 +11115,7 @@ Replaced truncated bam file (and associated files: bai,bas)
 
 pilot_data/data/NA12878/alignment/NA12878.chrom4.SOLID.corona.SRP000032.2009_08.bam
 
-list of new files found in
+list of new files found in 
 
 changelog_details/changelog_details_20091006_replacement_solid_bam
 
@@ -11151,7 +11151,7 @@ changelog_details/changelog_details_20091002_replacement_bas
 
 1st October 2009
 
-Add 33315 filtered fastq files that have passed DCC fastq QA process to ftp/data/.  The data are from  all three pilot projects, as well as the on-going main project.
+Add 33315 filtered fastq files that have passed DCC fastq QA process to ftp/data/.  The data are from  all three pilot projects, as well as the on-going main project. 
 
 Details in changelog_details/changelog_details_20091001_new_filtered_fastq_files  See README.filtered_fastq for further information about the QA process.
 
@@ -11243,7 +11243,7 @@ have all changed
 
 4th September 2009
 
-Incorrectly formatted Gencode annotation files withdrawn
+Incorrectly formatted Gencode annotation files withdrawn 
 
 withdrawn files listed in
 
@@ -11251,7 +11251,7 @@ changelog_details_20090904_withdrawn_reference_annotation
 
 replaced with correctly formatted files
 
-new files listed in
+new files listed in 
 
 changelog_details_20090904_new_reference_annotation
 
@@ -11267,7 +11267,7 @@ pilot_data/SRP000033.sequence.index updated accordingly
 
 Pilot 3 bams withdrawn
 
-withdrawn files listed in
+withdrawn files listed in 
 
 changelog_details/changelog_details_20090902_withdrawn_pilot3_bams
 
@@ -11301,7 +11301,7 @@ There is an README, md5 file and alignment index in the same directory
 
 27th August 2009
 
-New Gencode release 3 data files added to technical/reference
+New Gencode release 3 data files added to technical/reference 
 
 and pilot_data/technical/reference
 
@@ -11333,13 +11333,13 @@ changelog_details/changelog_details_20090826_new_bas_files
 
 24th August 2009
 
-Change to sequence.index and SRP000031/32.sequence.index to mark previously withdrawn solid fastq files which
+Change to sequence.index and SRP000031/32.sequence.index to mark previously withdrawn solid fastq files which 
 
 had failed the genotype checking and were withdrawn in early August
 
 18th August 2009
 
-Replaced pilot1 indel calls with new calls. All calls are stored in a .tgz file.
+Replaced pilot1 indel calls with new calls. All calls are stored in a .tgz file. 
 
 changelog_details/changelog_details_20090818_replacement_pilot1_indels
 
@@ -11395,7 +11395,7 @@ to be used for the paper analysis.
 
 All files under /data and some files from /technical/working have been moved to be under pilot_data/
 
-Files from release/ and technical/reference have had copies taken and put under pilot_data/ to ensure we have fixed versions of this files to
+Files from release/ and technical/reference have had copies taken and put under pilot_data/ to ensure we have fixed versions of this files to 
 
 represent the release
 
@@ -11403,7 +11403,7 @@ These changelog_details files describe the changes or list the copied files
 
 changelog_details_20090811_new_pilot_release
 
-changelog_details_20090812_new_pilot_technical_reference
+changelog_details_20090812_new_pilot_technical_reference  
 
 changelog_details_20090812_moved_alignment
 
@@ -11435,7 +11435,7 @@ changelog_details_20090804_withdrawn_SOLID_fastq
 
 3rd August 2009
 
-Pilot1 indels call added:
+Pilot1 indels call added: 
 
 technical/working/20090803_pilot1_indels/pilot1-indelcalls.tgz
 
@@ -11503,7 +11503,7 @@ Update of README files
 
 The alignment.index has been updated to reflect the alteration in bam files.
 
-The pilot3 bam files and an index for them can be found
+The pilot3 bam files and an index for them can be found 
 
 technical/working/pilot3_alignment_20090722/
 
@@ -11565,7 +11565,7 @@ Pilot 2 Solid Bam files
 
 BAM files for NA12878
 
-changelog_details/changelog_details_20090701_solid_bams
+changelog_details/changelog_details_20090701_solid_bams 
 
 30th June 2009
 
@@ -11583,7 +11583,7 @@ Details in:
 
 changelog_details/changelog_details_20090625_454_bams
 
-Updating pilot1 snp readme
+Updating pilot1 snp readme 
 
 release/2009_02/Pilot1/README_SRP000031_2009_02.txt
 
@@ -11611,9 +11611,9 @@ data/NA19005/alignment/NA19005.SLX.SRP000031.2009_06.bam is replaced with new co
 
 New SLX bams for pilot1, 2 and 3
 
-Old bams have been removed and listed in
+Old bams have been removed and listed in 
 
-changelog_details/changelog_details_20090619_removed_bams
+changelog_details/changelog_details_20090619_removed_bams 
 
 New bams are listed in
 
@@ -11695,11 +11695,11 @@ ERR000296
 
 ERR000343
 
-ERR000312
+ERR000312 
 
 28th May 2009
 
-Previously missed files which have been recalibration. This includes data from pilot
+Previously missed files which have been recalibration. This includes data from pilot 
 
 1, 2 and 3. The sequence index file has also had lines added for files which failed
 
@@ -11743,7 +11743,7 @@ The Readme can be found ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/2009_04
 
 29th April 2009
 
-Fastq files have both been withdrawn and reinstated on the basis of sample checking
+Fastq files have both been withdrawn and reinstated on the basis of sample checking 
 
 results produced by Goncalo Abecassis's group.
 
@@ -11761,7 +11761,7 @@ changelog_details/changelog_details_20090429_withdrawn_files
 
 More bam files. 31 SOLID-based low coverage bam files, one per individual, and 200 Illumina/454-based high-coverage/trio
 
-bam files (one per chromosome per individual).
+bam files (one per chromosome per individual). 
 
 Filelists of new files are:
 
@@ -11821,25 +11821,25 @@ Not all files have read/base counts in the index. Exceptions are marked as "not 
 
 26th March 2009
 
-Release of Freeze 4 Pilot1 data post-recalibration, plus recalibrated 454 data from Freezes 1-3.
+Release of Freeze 4 Pilot1 data post-recalibration, plus recalibrated 454 data from Freezes 1-3. 
 
-The new Freeze 4 Pilot1 data is listed here:
+The new Freeze 4 Pilot1 data is listed here: 
 
 	changelog_details/changelog_details_20090326_F4P1_recal
 
-The new Freeze123 recalibrated 454 data is listed here:
+The new Freeze123 recalibrated 454 data is listed here: 
 
 	changelog_details/changelog_details_20090326_F123_454_recal
 
-The equivalent unrecalibrated 454 data has been withdrawn, details here:
+The equivalent unrecalibrated 454 data has been withdrawn, details here: 
 
 	changelog_details/changelog_details_20090326_F123_454_UNrecal_removed
 
-The 11 files which failed QC at the DCC are listed here, with error reasons:
+The 11 files which failed QC at the DCC are listed here, with error reasons: 
 
 	changelog_details/changelog_details_20090326_QC_failures
 
-All of the above are in the top-level sequence.index file.
+All of the above are in the top-level sequence.index file. 
 
 This is in total 5438 new fastq files (plus 11 failing QC).
 
@@ -11847,7 +11847,7 @@ The sequence index is shortly to be updated to include read/base counts for all 
 
 25th March 2009
 
-Additional Pilot3 data. The new files are listed in
+Additional Pilot3 data. The new files are listed in 
 
 changelog_details/changelog_details/20090825_new_pilot3. The sequence index can
 
@@ -11861,13 +11861,13 @@ details in changelog_details/changelog_details_20090320_recovered
 
 20th March 2009
 
-Withdrawal of some mate files which were missed in the previous withdrawal of files
+Withdrawal of some mate files which were missed in the previous withdrawal of files 
 
 on the 5th March 2009 details in changelog_details/changelog_details_20090320
 
 19th March 2009
 
-Sample id swap in sequence index file. Two SRS numbers were associated with the
+Sample id swap in sequence index file. Two SRS numbers were associated with the 
 
 incorrect NA number and this has now been fixed in the sequence.index file. Details
 
@@ -11887,13 +11887,13 @@ The new files are listed in changelog_details/changelog_details_20090316
 
 Extra unrecalibrated pilot3 fastq files. The index file for these files is found in
 
-technical/working/20090313_pilot3_unrecal/
+technical/working/20090313_pilot3_unrecal/ 
 
 The new files are listed in changelog_details/changelog_details_20090313
 
 10th March 2009
 
- -addition of missed fastq files which were lost from previous reorganise of ftp site. Details
+ -addition of missed fastq files which were lost from previous reorganise of ftp site. Details 
 
 in changelog_details/changelog_details_20090310
 
@@ -11907,7 +11907,7 @@ in changelog_details/changelog_details_20090310
 
  - Replaced 3 low coverage BAM files that were corrupt at source (WTSI). For a filelist of just these
 
-files, see changelog_details/changelog_details_20090302. Updated alignment.index to
+files, see changelog_details/changelog_details_20090302. Updated alignment.index to 
 
 hold correct md5's for these files.
 
@@ -11933,7 +11933,7 @@ of just the new BAMs, this can be found in changelog_details/changelog_details_2
 
 6th Feburary 2009
 
-Adding freeze3 solid fastq onto the ftp site. These files are unrecalibrated.
+Adding freeze3 solid fastq onto the ftp site. These files are unrecalibrated. 
 
 Details can be found in changelog_details/changelog_details_20090206
 
@@ -11959,9 +11959,9 @@ These files have been added under technical/working/20090105_454_recal. A list o
 
 22nd December 2008:
 
-BGI and SC files withdrawn on the 18th December 2008 due to lack of ERA accession have been added back.
+BGI and SC files withdrawn on the 18th December 2008 due to lack of ERA accession have been added back. 
 
-The sequence.index file has been updated to reflect this and the details of the new files can be found
+The sequence.index file has been updated to reflect this and the details of the new files can be found 
 
 in changelog_details/changelog_details_20081222
 
