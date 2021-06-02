@@ -11,4 +11,4 @@ jmespath==0.10.0          # via boto3, botocore
 python-dateutil==2.8.1    # via botocore
 s3transfer==0.3.3         # via boto3
 six==1.15.0               # via python-dateutil
-urllib3==1.25.9           # via botocore
+urllib3==1.26.5           # via botocore
